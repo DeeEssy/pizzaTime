@@ -216,3 +216,26 @@ ymaps.ready(function () {
 
     myMap.geoObjects.add(myPlacemark)
 });
+
+let forms = document.querySelector('.form-send')
+
+let formChecker = () => {
+    if (forms.length === 0) {
+        return
+    }
+}
+
+formChecker()
+
+let formSend = form => {
+    console.log(form);
+}
+
+for (let i = 0; i < forms.length; i++) {
+    forms[i].addEventListener('submit', event => {
+        event.preventDefault()
+        let form = event.currentTarget
+        formSend(form)
+    })
+    
+}
