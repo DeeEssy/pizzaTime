@@ -833,6 +833,13 @@ body {
     text-align: center;
   }
 
+  .popup-wrapper .popup-inner {
+    padding: 0;
+  }
+  .popup-wrapper .popup-inner .popup-content {
+    padding-top: 70px;
+  }
+
   .popup-thanks .popup-wrapper .popup-inner .popup-content .thanks-title, .popup-error .popup-wrapper .popup-inner .popup-content .thanks-title {
     font-size: 28px;
   }
